@@ -191,19 +191,22 @@ footer {
 }
 
 @media (max-width: 768px) {
-    header { flex-direction: column; gap: 10px; padding: 15px; }
-    header .logo { font-size: 1.5rem; } 
+    header { flex-direction: column; gap: 15px; padding: 15px; }
+    header .logo { font-size: 1.8rem; text-align: center; } 
 
-    /* PERBAIKAN 1: Mengurangi jarak antar menu */
+    /* === PERBAIKAN FINAL UNTUK NAVIGASI HP === */
     nav { 
-        gap: 12px; /* Jarak dikurangi dari 15px */
-        flex-wrap: wrap; 
-        justify-content: center; 
+        display: flex;
+        flex-direction: column; /* 1. Susun menu ke bawah */
+        align-items: center;   /* 2. Posisikan di tengah */
+        gap: 10px;             /* 3. Atur jarak vertikal */
+        width: 100%;           /* 4. Gunakan lebar penuh */
     } 
-    /* PERBAIKAN 2: Mengecilkan tulisan menu */
     nav a { 
-        font-size: 0.85rem; /* Ukuran font dikurangi dari 0.9rem */
+        font-size: 1rem;       /* 5. Ukuran font bisa normal kembali */
+        padding: 5px 0;        /* 6. Beri sedikit padding agar mudah disentuh */
     }
+    /* === AKHIR PERBAIKAN === */
 
     .hero h1 { font-size: 2.5rem; }
     .hero .hero-buttons { flex-direction: column; gap: 15px; }
