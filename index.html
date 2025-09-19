@@ -193,14 +193,21 @@ footer {
 @media (max-width: 768px) {
     header { flex-direction: column; gap: 10px; padding: 15px; }
     header .logo { font-size: 1.5rem; } 
-    nav { gap: 15px; flex-wrap: wrap; justify-content: center; } 
-    nav a { font-size: 0.9rem; }
+
+    /* PERBAIKAN 1: Mengurangi jarak antar menu */
+    nav { 
+        gap: 12px; /* Jarak dikurangi dari 15px */
+        flex-wrap: wrap; 
+        justify-content: center; 
+    } 
+    /* PERBAIKAN 2: Mengecilkan tulisan menu */
+    nav a { 
+        font-size: 0.85rem; /* Ukuran font dikurangi dari 0.9rem */
+    }
+
     .hero h1 { font-size: 2.5rem; }
     .hero .hero-buttons { flex-direction: column; gap: 15px; }
-    
-    /* PERBAIKAN: Mengurangi padding kiri-kanan di HP agar terlihat full */
     .section { padding: 40px 20px; }
-
     h2 { font-size: 1.8rem; }
     .advantages, .menu-cards { flex-direction: column; align-items: center; }
     .adv-card, .menu-card { width: 100%; max-width: 350px; }
